@@ -5,16 +5,16 @@ const Navbar = () => {
   const links = (
     <>
       <li className="mr-2 hover:underline">
-        <NavLink to="/">Home</NavLink>
+        <a href="#home">Home</a>
       </li>
       <li className="mr-2 hover:underline">
         <a href="#project">Project</a>
       </li>
       <li className="mr-2 hover:underline">
-        <NavLink to="/aboutus">About Us</NavLink>
+        <a href="#experience">Experience</a>
       </li>
       <li className="mr-2 hover:underline">
-        <NavLink to="/contuctus">Contuct Us</NavLink>
+        <a href="#contuct">Contuct</a>
       </li>{" "}
     </>
   );
@@ -53,7 +53,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Contuct</a>
+          <a href="#contuct" className="btn">
+            Contuct
+          </a>
         </div>
       </div>
     </div>

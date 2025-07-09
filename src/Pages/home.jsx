@@ -2,12 +2,12 @@ import React from "react";
 //import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useTypewriter } from "react-simple-typewriter";
+import { TbBrandGmail } from "react-icons/tb";
 import {
   Smile, // For Happy Customer
   Headset, // For Ticket Solved
   Star, // For Average Rating
-  Linkedin,
-  Twitter,
+  Facebook,
   Instagram,
   Github,
 } from "lucide-react";
@@ -25,16 +25,16 @@ const Home = () => {
     loop: 0,
   });
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white font-sans">
+    <div
+      id="home"
+      className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white font-sans"
+    >
       {/* Header Section */}
       <header className="">
         <div className="sticky">
           <div></div>
           {/* Responsive Menu (simplified) */}
-          <div className="md:hidden">
-            {/* You'd typically use a library like react-burger-menu here,
-                         but for simplicity, we'll just have a placeholder. */}
-          </div>
+          <div className="md:hidden"></div>
         </div>
       </header>
 
@@ -50,7 +50,7 @@ const Home = () => {
               className="rounded-full w-50 h-50 md:w-90 md:h-90  overflow-hidden  shadow-2xl shadow-purple-500/30 border-4 border-purple-500/20"
             >
               <img
-                src="https://i.ibb.co/pjT075xp/Whats-App-Image-2023-09-17-at-22-14-22.jpg" // My image URL
+                src="https://i.ibb.co/SXD7hqpK/20250707-205150.jpg" // My image URL
                 alt="shoib rahman image"
                 className="w-full h-full  object-cover"
                 style={{
@@ -86,23 +86,33 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="flex justify-center md:justify-start gap-4"
             >
-              <a href="#" className="hover:text-purple-300 transition-colors">
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:text-purple-300 transition-colors">
-                <Twitter className="w-6 h-6" />
+              <a
+                href="https://www.facebook.com/share/18pzjf89yx/"
+                target="_blank"
+                className="hover:text-purple-300 transition-colors"
+              >
+                <Facebook className="w-6 h-6"></Facebook>
               </a>
               <a
                 href="https://www.instagram.com/shoib7349/"
+                target="_blank"
                 className="hover:text-purple-300 transition-colors"
               >
                 <Instagram className="w-6 h-6" />
               </a>
               <a
                 href="https://github.com/shoyebrahman"
+                target="_blank"
                 className="hover:text-purple-300 transition-colors"
               >
                 <Github className="w-6 h-6" />
+              </a>
+              <a
+                href="mailto:imad64236@gmail.com"
+                target="_blank"
+                className="hover:text-purple-300 transition-colors"
+              >
+                <TbBrandGmail className="w-6 h-6" />
               </a>
             </motion.div>
 
@@ -118,7 +128,7 @@ const Home = () => {
                                        shadow-lg hover:shadow-purple-500/20 transition-all duration-300
                                        px-8 py-3 rounded-full font-semibold text-lg"
               >
-                Accent
+                <a href="#contuct">Contuct</a>
               </button>
             </motion.div>
           </div>
@@ -130,12 +140,11 @@ const Home = () => {
       {/* About Me Section (Simplified) */}
       <footer className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">ABOUT ME</h2>
+          {/* <h2 className="text-3xl font-bold text-white mb-4">ABOUT ME</h2> */}
           <p className="text-gray-400 text-lg">
             {/* This is a placeholder.  In a real app, this would come from content. */}
-            I'm a Web Developer who design and develop website.
           </p>
-          <Aboutme></Aboutme>
+          {/* <Aboutme></Aboutme> */}
           {/* Add more about me content here */}
 
           {/* Add my project */}

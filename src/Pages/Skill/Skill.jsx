@@ -32,7 +32,7 @@ const Skill = () => {
   const bottomSkills = skills.slice(8);
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div id="experience" className="flex flex-col items-center  w-full">
       {/* First 8 skills  */}
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-3 lg:gap-2 w-full max-w-7xl">
         {topSkills.map((skill, index) => (
@@ -49,7 +49,7 @@ const Skill = () => {
 
       {/* Next 3 skills  */}
       <div className="flex justify-center mt-8 w-full max-w-3xl ">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 ">
+        <div className="grid grid-cols-2 gap-x-10 md:grid-cols-3 gap-3 gap-y-3 ">
           {bottomSkills.map((skill, index) => (
             <div className="avatar" key={index}>
               <div className="ring-primary ring-offset-base-100 w-27 sm:w-20 md:w-24 lg:w-24 rounded-full ring-2 ring-offset-2 flex flex-col justify-center items-center">
